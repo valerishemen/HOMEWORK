@@ -6,123 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>шаблон Figma</title>
-    <link rel="stylesheet" href="/normalize css" />
+    <link rel="stylesheet" href="/5 неделя+/normalize.css" />
+    <link rel="stylesheet" href="figma_style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-image: url(assets/images/image1.png);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-            text-align: center;
-        }
 
-        li {
-            list-style-type: none;
-            display: inline;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: 400;
-            padding-right: 24px;
-        }
-
-        div {
-            margin: 0px auto 0px auto;
-            width: 800px;
-            height: auto;
-        }
-
-        p {
-            font-family: 'Montserrat Alternates', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 36px;
-        }
-
-        button {
-            width: 182px;
-            margin: 0 auto;
-            background-color: #8D4FDB;
-            width: 182px;
-            height: 45px;
-        }
-
-        button:hover {
-            color: rgb(201, 201, 211);
-            background-color: #1c099c;
-            width: 182px;
-            height: 45px;
-        }
-
-        #header {
-            text-align: center;
-            padding-top: 60px;
-            padding-bottom: 20px;
-        }
-
-        #first {
-            background-image: url('assets/images/image1.png');
-        }
-
-        #second {
-            background-image: url(assets/images/IMAGE2.png);
-        }
-
-        #third {
-            background-image: url('assets/images/IMAGE3.png');
-        }
-
-        #first,
-        #second,
-        #third {
-            background-size: cover;
-            height: 330px;
-            width: 800px;
-            margin-left: auto;
-        }
-
-        .article {
-            text-align: left;
-            height: 330px;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 28px;
-            line-height: 35px;
-            color: #FFFFFF;
-        }
-
-        .box {
-            width: 470px;
-            height: 70px;
-            margin-bottom: auto;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 28px;
-            line-height: 35px;
-        }
-
-        .white {
-            background-color: #FFFFFF;
-            padding: 32px 0px 44px 0px;
-            text-align: center;
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 25px;
-        }
-
-        a:link {
-            color: blue;
-        }
-
-        a:focus {
-            color: slateblue;
-        }
-    </style>
 
 </head>
 
@@ -141,8 +29,10 @@
     </header>
     <main>
         <div id="first" class="article">
+            <img src="assets/images/photo1.png" alt="photo">
             <p class="box">
                 The 10 most beautiful places you should visit in your life</p>
+
         </div>
 
         <div class="white">Vestibulum ut
@@ -153,8 +43,10 @@
         </div>
 
         <div class="article" id="second">
+            <img src="assets/images/photo (2).png" alt="photo">
             <p class="box">
                 Perfect gear to take with you if you go on a photography trip</p>
+
         </div>
 
         <div class="white">Vestibulum ut
@@ -164,8 +56,10 @@
             turpis nec metus pharetra bibendum. Vivamus id urna et leo blandit consequat.
         </div>
         <div class="article" id="third">
+            <img src="assets/images/photo1.png" alt="photo">
             <p class="box">
                 We are looking for another photographer to join our group</p>
+
         </div>
 
         <div class="white">Vestibulum ut
@@ -174,23 +68,31 @@
             Duis posuere nisi sit amet neque finibus vestibulum. Vivamus at leo ut turpis posuere molestie. Nullam at
             turpis nec metus pharetra bibendum. Vivamus id urna et leo blandit consequat.
         </div>
-        <div style="background-image: url(assets/images/grey.png); height: 320px; text-align: center;">
+        <div class="grey">
             <p> Want to read more?</p>
-            <br><br><br><br><br><br>
+
             <button>Visit Blog Archive
             </button>
         </div>
-        <br><br><br><br>
-        <div style="background-color: #FFFFFF; height: 678px; text-align: center;">Featured
-            Stories
-            <br><br><br>Did you read our personal favorites?
-            <br>
-            <img src="assets/images/small.png" alt="mountains">
-            <img src=" assets/images/small2.png" alt="beach">
-            <img src=" assets/images/img.png" alt="city">
-        </div>
     </main>
-    <footer style="background-color: black; height: 166px; color: #FFFFFF; text-align: center;">
+
+    <aside id="more">Featured
+        Stories
+        <p id="question">Did you read our personal favorites?</p>
+        <br>
+        <div id="image">
+            <div><img src="assets/images/small.png" alt="mountains" class="img">
+                <p class="sign">The 10 most beautiful places you should visit in your life</p>
+            </div>
+            <div><img src=" assets/images/small2.png" alt="beach" class="img">
+                <p class="sign">We found the most beautiful place for our party november</p>
+            </div>
+            <div><img src=" assets/images/img.png" alt="city" class="img">
+                <p class="sign">Why New York is still our favorite city to visit</p>
+            </div>
+    </aside>
+
+    <footer id="footer">
         <address>
             Copyright © Explorer - Images used for demonstration purpose only <a href="ссылка-будет-тут">(Licenses)</a>
             <br>Copyright <a href="ссылка-будет-тут">©Studio Corvus</a>
