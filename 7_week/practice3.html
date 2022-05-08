@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: auto;
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-rows: repeat(2, 1fr);
+            background-color: blanchedalmond;
+        }
+
+        .container,
+        div {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div><img src="assets_SKZ/BAN-CHAN-MANIAC.jpg" alt="BanChan"></div>
+        <div><img src="assets_SKZ/CHANBIN._MANIACjpg.jpg" alt="Changbin"></div>
+        <div><img src="assets_SKZ/FELIX_MANIAC.jpg" alt="Felix"></div>
+        <div><img src="assets_SKZ/hungin_maniac.jpg" alt="Hungin"></div>
+        <div><img src="assets_SKZ/LEE-KNOW-MANIAC.jpg" alt="LeeKnow"></div>
+        <div><img src="assets_SKZ/HAN_MANIAC.jpg" alt="Han"></div>
+    </div>
+</body>
+
+</html>
