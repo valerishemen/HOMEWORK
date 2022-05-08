@@ -146,6 +146,7 @@ img {
     grid-template-rows: 1fr 1fr;
     column-gap: 2vw;
     row-gap: 0.5vw;
+    font-size: 1.5vw;
 }
 #column2{
     grid-area: foto;
@@ -347,7 +348,78 @@ footer{
     margin: 0 0;
 }
 
+@media  (min-width:300px) and (max-width:960px) {
+body{
+    font-size: 3vw;
+}
 
-/*АДАПТИВНАЯ ВЕРСТКА
-389 - ширина минимальная для меню
-*/ 
+    header {
+        background-image: none;
+        height: max-content
+    }
+    #audio{
+        margin: 2vw;
+        margin-bottom: 2vw;
+    font-weight: 400;
+    }
+    #logomenu{
+        width: 15%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav{
+        width: 85%;
+        display: flex;
+    }
+
+    #members {
+        
+        grid-template-columns: 40% 40%;
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        width: 100%;
+        gap: 1vw;
+        
+    }
+    .info {
+        width: 100%;
+        height: max-content;
+        padding: 1vw 0 1vw 0;
+    }
+    #history {
+        grid-template-columns: 60% 35% ;
+        margin-top: 3vw;
+        margin-bottom: 0;
+    }
+
+    #underfoto{
+        display: none;
+    }
+
+    #upsidefoto{
+        position: relative;
+        left: 26%;
+        bottom: 0%;
+        animation: none;
+    }
+
+    #video{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 2vw 0vw 2vw 0vw
+    }
+    .video{
+        width: 60%;
+        margin-bottom: 2vw;
+
+    }
+    iframe{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        height: max-content
+}
+}
