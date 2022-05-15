@@ -173,14 +173,14 @@ img {
     left: 50%;
     top: 15%;
     opacity: 0.5;
-    animation: foto 20s infinite;
+    animation: foto 15s infinite;
 }
 
 #upsidefoto{
     position: relative;
     left: 14%;
     bottom: 90%;
-    animation: upside 20S infinite;
+    animation: upside 15S infinite;
 }
 
 #blackconteiner {
